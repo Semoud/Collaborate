@@ -7,7 +7,7 @@ const Hero = () => {
 					<img className='absolute w-full h-full object-cover' src='./assets/hero.jpg' alt='team working in creative office' />
 				</div>
 				<div>
-					<h1 className='text-3xl md:text-6xl font-bold'>For all the ways you work, we’re here.</h1>
+					<h1 className='text-3xl md:text-6xl font-semibold'>For all the ways you work, we’re here.</h1>
 					<p className='md:text-lg my-6'>Whether you need an alternative to working from home or a hybrid solution for the team, we’re here to help. Complete this form and our team will reach out to learn more about your unique workplace needs.</p>
 					<form id='lead'>
 						<div className='flex flex-col sm:flex-row gap-4 mb-4'>
