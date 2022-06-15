@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Features from './Features';
 import Locations from './Locations';
+import Footer from './Footer';
 
 function App() {
 	return (
@@ -10,6 +11,7 @@ function App() {
 			<Hero />
 			<Features />
 			<Locations />
+			<Footer />
 		</div>
 	);
 }
