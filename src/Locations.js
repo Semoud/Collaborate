@@ -4,8 +4,8 @@ function Locations() {
 	return (
 		<div className='py-7 md:py-14 lg:py-28'>
 			<div className='main-container'>
-				<h2 className='text-3xl md:text-4xl font-semibold'>49 Locations near you</h2>
-				<div className='mt-5 md:mt-10 lg:mt-20 flex overflow-scroll gap-12 snap-x snap-mandatory snap-always no-scrollbar'>
+				<h2 className='text-3xl font-semibold md:text-4xl'>49 Locations near you</h2>
+				<div className='no-scrollbar mt-5 flex snap-x snap-mandatory snap-always gap-12 overflow-scroll md:mt-10 lg:mt-20'>
 					<LocationsCard name='131 Finsbury Pavement' area='Moorgate, London' image='./assets/location_131-finsburyPavement.jpg' />
 					<LocationsCard name='30 Churchill Place' area='Canary Wharf, London' image='./assets/location_30-churchillPlace.jpg' />
 					<LocationsCard name='Shoreditch Exchange' area='Hoxton, London' image='./assets/location_shoreditch-Exchange.jpg' />

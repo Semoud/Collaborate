@@ -2,11 +2,11 @@ const Footer = () => {
 	return (
 		<div className='py-10 md:py-20'>
 			<div className='main-container'>
-				<div className='flex flex-col lg:flex-row gap-8 lg:gap-0 items-center justify-between pb-10 lg:pb-20'>
+				<div className='flex flex-col items-center justify-between gap-8 pb-10 lg:flex-row lg:gap-0 lg:pb-20'>
 					<a href='https://www.semoud.com/portfolio'>
 						<img className='max-w-[125px]' src='./assets/logo.svg' alt='WeWork logo' />
 					</a>
-					<div className='flex flex-col text-center md:flex-row gap-8 md:gap-0'>
+					<div className='flex flex-col gap-8 text-center md:flex-row md:gap-0'>
 						<a className='px-4 font-medium' href='https://www.semoud.com/portfolio'>
 							Locations
 						</a>
@@ -35,7 +35,7 @@ const Footer = () => {
 						</a>
 					</div>
 				</div>
-				<div className='flex flex-col md:flex-row gap-6 md:gap-0 items-center justify-center border-t pt-8 text-xs'>
+				<div className='flex flex-col items-center justify-center gap-6 border-t pt-8 text-xs md:flex-row md:gap-0'>
 					<a className='px-4 font-medium' href='https://www.semoud.com/portfolio'>
 						2021 Semoud B. All right reserved.
 					</a>
