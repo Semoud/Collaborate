@@ -22,16 +22,16 @@ const Footer = () => {
 					</div>
 					<div className='flex'>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_facebook.png' />
+							<img className='mx-1 max-w-[20px]' src='./assets/social_facebook.png' alt='facebook' />
 						</a>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_instagram.png' />
+							<img className='mx-1 max-w-[20px]' src='./assets/social_instagram.png' alt='instagram' />
 						</a>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_twitter.png' />
+							<img className='mx-1 max-w-[20px]' src='./assets/social_twitter.png' alt='twitter' />
 						</a>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_linkedin.png' />
+							<img className='mx-1 max-w-[20px]' src='./assets/social_linkedin.png' alt='linkedin' />
 						</a>
 					</div>
 				</div>
