@@ -9,4 +9,7 @@
 	.nav-link {
 		@apply mb-4 text-2xl font-semibold lg:mr-8 lg:mb-0 lg:text-base lg:font-medium;
 	}
+	.input-field {
+		@apply w-full border border-black p-3;
+	}
 }

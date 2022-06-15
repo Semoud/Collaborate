@@ -46,7 +46,7 @@ const Navbar = () => {
 					<a className='mr-4 hidden border border-black py-2 px-5 sm:block' href='http://www.semoud.com/portfolio'>
 						Login
 					</a>
-					<a className='hidden border-0 border-blue-700 bg-blue-700 py-2 px-5 text-white sm:block' href='http://www.semoud.com/portfolio'>
+					<a className='hidden border border-blue-700 bg-blue-700 py-2 px-5 text-white sm:block' href='http://www.semoud.com/portfolio'>
 						Contact Us
 					</a>
 				</div>
