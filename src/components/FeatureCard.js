@@ -13,7 +13,7 @@ const FeaturesCard = ({ data }) => {
 			<div className='mt-6 sm:mt-0 sm:ml-6'>
 				<h2 className='text-3xl font-semibold'>{data.title}</h2>
 				<p className='mt-6'>{data.body}</p>
-				<a className='mt-6 block' href={data.link} target='_blank'>
+				<a className='mt-6 block' href={data.link} target='_blank' rel='noreferrer'>
 					{data.cta + ' ›'}
 				</a>
 			</div>
