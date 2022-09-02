@@ -15,7 +15,7 @@ const Hero = () => {
 							<input className='input-field' type='email' placeholder='Email address*' />
 						</div>
 						<div className='mb-4 flex flex-col  gap-4 sm:flex-row'>
-							<input className='input-field' type='tel' placeholder='Full name*' />
+							<input className='input-field' type='tel' placeholder='Telephone number*' />
 							<input className='input-field' type='text' placeholder='Country*' />
 						</div>
 						<div className='mb-4 flex flex-col  gap-4 sm:flex-row'>

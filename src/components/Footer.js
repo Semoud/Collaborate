@@ -4,7 +4,7 @@ const Footer = () => {
 			<div className='main-container'>
 				<div className='flex flex-col items-center justify-between gap-8 pb-10 lg:flex-row lg:gap-0 lg:pb-20'>
 					<a href='https://www.semoud.com/portfolio'>
-						<img className='max-w-[125px]' src='./assets/logo.svg' alt='WeWork logo' />
+						<img className='max-w-[125px]' src='/assets/logo.svg' alt='WeWork logo' />
 					</a>
 					<div className='flex flex-col gap-8 text-center md:flex-row md:gap-0'>
 						<a className='px-4 font-medium' href='https://www.semoud.com/portfolio'>
@@ -22,16 +22,16 @@ const Footer = () => {
 					</div>
 					<div className='flex'>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_facebook.png' alt='facebook' />
+							<img className='mx-1 max-w-[20px]' src='/assets/social_facebook.png' alt='facebook' />
 						</a>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_instagram.png' alt='instagram' />
+							<img className='mx-1 max-w-[20px]' src='/assets/social_instagram.png' alt='instagram' />
 						</a>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_twitter.png' alt='twitter' />
+							<img className='mx-1 max-w-[20px]' src='/assets/social_twitter.png' alt='twitter' />
 						</a>
 						<a href='https://www.semoud.com/portfolio'>
-							<img className='mx-1 max-w-[20px]' src='./assets/social_linkedin.png' alt='linkedin' />
+							<img className='mx-1 max-w-[20px]' src='/assets/social_linkedin.png' alt='linkedin' />
 						</a>
 					</div>
 				</div>

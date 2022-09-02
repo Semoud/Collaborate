@@ -8,6 +8,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import blockContent from './blockContent';
 import category from './category';
 import location from './location';
+import amenity from './amenity';
 import feature from './feature';
 import author from './author';
 
@@ -21,6 +22,7 @@ export default createSchema({
 		// The following are document types which will appear
 		// in the studio.
 		location,
+		amenity,
 		feature,
 		author,
 		category,

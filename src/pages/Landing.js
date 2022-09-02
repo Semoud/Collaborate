@@ -7,7 +7,7 @@ function Landing() {
 		<>
 			<Hero />
 			<Features />
-			<Locations />
+			<Locations title={'49 Locations near you'} slugExclude={null} />
 		</>
 	);
 }

@@ -23,12 +23,42 @@ export default {
 			type: 'string',
 		},
 		{
-			name: 'thumbnail',
-			title: 'Thumbnail',
-			type: 'image',
-			options: {
-				hotspot: true,
-			},
+			name: 'gallery',
+			title: 'Gallery',
+			type: 'array',
+			of: [
+				{
+					name: 'images',
+					title: 'Images',
+					type: 'object',
+					fields: [
+						{
+							name: 'thumbnail',
+							title: 'Thumbnail',
+							type: 'image',
+							options: {
+								hotspot: true,
+							},
+						},
+						{
+							name: 'alt',
+							title: 'Alt Text',
+							type: 'string',
+						},
+					],
+				},
+			],
+		},
+		{
+			name: 'info',
+			title: 'Information',
+			type: 'text',
+		},
+		{
+			name: 'amenities',
+			title: 'Amenities',
+			type: 'array',
+			of: [{ type: 'reference', to: { type: 'amenity' } }],
 		},
 	],
 
@@ -36,7 +66,7 @@ export default {
 		select: {
 			title: 'title',
 			author: 'author.name',
-			media: 'mainImage',
+			media: 'thumbnail',
 		},
 		prepare(selection) {
 			const { author } = selection;

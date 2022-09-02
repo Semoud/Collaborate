@@ -1,31 +1,16 @@
 export default {
-	name: 'feature',
-	title: 'Feature',
+	name: 'amenity',
+	title: 'Amenity',
 	type: 'document',
 	fields: [
-		{
-			name: 'title',
-			title: 'Title',
-			type: 'string',
-		},
 		{
 			name: 'icon',
 			title: 'Icon',
 			type: 'image',
 		},
 		{
-			name: 'body',
-			title: 'Body',
-			type: 'text',
-		},
-		{
-			name: 'link',
-			title: 'Link',
-			type: 'url',
-		},
-		{
-			name: 'cta',
-			title: 'Call to Action',
+			name: 'title',
+			title: 'Title',
 			type: 'string',
 		},
 	],
