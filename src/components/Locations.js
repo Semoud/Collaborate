@@ -1,19 +1,17 @@
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import sanityClient from '../client';
 import LocationsCard from './LocationCard';
 
 function Locations({ title, slugExclude }) {
+	const { slug } = useParams();
 	const [location, setLocation] = useState([]);
 	useEffect(() => {
 		sanityClient
 			.fetch(`*[_type == "location" && !(slug.current == "${slugExclude}")]{_id, slug, title, location, gallery}`)
 			.then(data => setLocation(data))
 			.catch(err => console.error(err));
-	}, []);
-
-	useEffect(() => {
-		console.log(`*[_type == "location" && !(slug.current == "${slugExclude}")]{_id, slug, title, location, gallery}`);
-	}, [location]);
+	}, [slug]);
 
 	return (
 		<div className='py-7 md:py-14 lg:py-28'>
