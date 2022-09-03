@@ -21,6 +21,10 @@ function LocationSingle() {
 		console.log(slug);
 	}, [slug]);
 
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
+
 	return (
 		<>
 			<div className='py-7 md:py-14 lg:py-28'>
