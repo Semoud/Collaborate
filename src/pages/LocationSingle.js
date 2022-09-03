@@ -69,7 +69,7 @@ function LocationSingle() {
 					)}
 				</div>
 			</div>
-			<Locations title={'Nearby buildings'} slugExclude={`${slug}`} />
+			<Locations title={'Nearby buildings'} scroll={true} slugExclude={`${slug}`} />
 		</>
 	);
 }
