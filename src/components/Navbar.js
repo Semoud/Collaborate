@@ -31,7 +31,7 @@ const Navbar = () => {
 						<Link to={'/'} onClick={closeMenu} className='nav-link lg:hidden'>
 							Home
 						</Link>
-						<Link to={'/'} onClick={closeMenu} className='nav-link'>
+						<Link to={'/locations'} onClick={closeMenu} className='nav-link'>
 							Locations
 						</Link>
 						<a className='nav-link' href='http://www.semoud.com/portfolio'>
