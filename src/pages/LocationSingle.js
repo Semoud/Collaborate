@@ -31,11 +31,13 @@ function LocationSingle() {
 				<div className='main-container grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-10'>
 					{locationData && (
 						<>
-							<div className='grid grid-cols-1 gap-4'>
+							<div className='no-scrollbar flex snap-x snap-mandatory snap-always flex-row gap-4 overflow-scroll sm:grid sm:grid-cols-1 sm:overflow-auto'>
 								{locationData.gallery &&
 									locationData.gallery.map(item => (
-										<div className='aspect-w-4 aspect-h-3' key={item._id}>
-											<img src={urlFor(item.thumbnail.asset)} alt={item.alt} className='h-full w-full object-cover object-center' />
+										<div className='h-full min-w-full snap-center'>
+											<div className='aspect-w-4 aspect-h-3' key={item._id}>
+												<img src={urlFor(item.thumbnail.asset)} alt={item.alt} className='h-full w-full object-cover object-center' />
+											</div>
 										</div>
 									))}
 							</div>
