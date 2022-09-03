@@ -13,7 +13,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<nav className='py-4'>
+		<nav className='border-b border-gray-200 py-4 lg:border-0'>
 			<div className='main-container flex items-center justify-between'>
 				<div className='flex items-center'>
 					<img onClick={openMenu} className='mr-6 max-w-[20px] cursor-pointer lg:hidden' src='/assets/menu-m.svg' alt='menu button' />
