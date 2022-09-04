@@ -31,7 +31,7 @@ function LocationSingle() {
 				<div className='main-container grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-10'>
 					{locationData && (
 						<>
-							<div className='no-scrollbar flex snap-x snap-mandatory snap-always flex-row gap-4 overflow-scroll sm:grid sm:grid-cols-1 sm:overflow-auto'>
+							<div key={locationData._id} className='no-scrollbar flex snap-x snap-mandatory snap-always flex-row gap-4 overflow-scroll sm:grid sm:grid-cols-1 sm:overflow-auto'>
 								{locationData.gallery &&
 									locationData.gallery.map(item => (
 										<div className='h-full min-w-full snap-center'>
