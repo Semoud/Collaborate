@@ -14,7 +14,7 @@ const LocationsCard = ({ data, scroll }) => {
 	};
 
 	return (
-		<Link className={scroll == true && 'min-w-[75%] max-w-[400px] snap-start sm:min-w-[40%]'} to={'/location/' + data.slug.current} onClick={scrollToTop}>
+		<Link className={scroll ? 'min-w-[75%] max-w-[400px] snap-start sm:min-w-[40%]' : ''} to={'/location/' + data.slug.current} onClick={scrollToTop}>
 			<div className='aspect-w-1 aspect-h-1 mb-3 xl:mb-6'>
 				<img className='h-full w-full object-cover object-center' src={urlFor(data.gallery[0].thumbnail.asset)} alt={data.gallery[0].alt} />
 			</div>
