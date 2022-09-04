@@ -1,6 +1,6 @@
 const Footer = () => {
 	return (
-		<div className='py-10 md:py-20'>
+		<div className='border-t border-gray-200 py-10 md:py-20 lg:border-0'>
 			<div className='main-container'>
 				<div className='flex flex-col items-center justify-between gap-8 pb-10 lg:flex-row lg:gap-0 lg:pb-20'>
 					<a href='https://www.semoud.com/portfolio'>
