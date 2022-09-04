@@ -21,15 +21,14 @@ function LocationCollection() {
 		if (!activeFilters.includes(id)) setActiveFilters([...activeFilters, id]);
 	};
 	useEffect(() => {
-		// TODO: MAKE QUERY RETURN LOCATIONS THAT MATCH ALL FILTERS NOT ANY.
 		const list = activeFilters.map(item => `"${item}"`).join(',');
-		const query = `*[_type == "location"${activeFilters.length >= 1 ? ' && (references([' + list + ']))' : ''}]{_id, slug, title, location, gallery}`;
+		// const query = `*[_type == "location"${activeFilters.length >= 1 ? ' && (references(' + list + '))' : ''}]{_id, slug, title, location, gallery}`;
 		sanityClient
-			.fetch(query)
+			.fetch(`*[_type == "location"${activeFilters.length >= 1 ? ' && amenities[]._ref match [' + list + ']' : ''}]{_id, slug, title, location, gallery}`)
 			.then(data => setLocation(data))
 			.catch(err => console.error(err));
 
-		console.log(activeFilters, query);
+		console.log(activeFilters);
 	}, [activeFilters]);
 
 	const [location, setLocation] = useState([]);
