@@ -37,7 +37,7 @@ const Footer = () => {
 				</div>
 				<div className='flex flex-col items-center justify-center gap-6 border-t pt-8 text-xs md:flex-row md:gap-0'>
 					<a className='px-4 font-medium' href='https://www.semoud.com/portfolio'>
-						2021 Semoud B. All right reserved.
+						{new Date().getFullYear()} Semoud B. All right reserved.
 					</a>
 					<a className='px-4 font-medium underline' href='https://www.semoud.com/portfolio'>
 						Privacy Policy
