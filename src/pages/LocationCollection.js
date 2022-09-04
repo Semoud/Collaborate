@@ -42,12 +42,16 @@ function LocationCollection() {
 	return (
 		<div className='py-7 md:py-14 lg:py-28'>
 			<div className='main-container'>
-				<div className='grid-col-1 relative grid md:grid-cols-2'>
-					<h2 className='text-3xl font-semibold md:text-4xl'>All buildings</h2>
+				<div className='grid-col-1 relative grid gap-3 md:grid-cols-2'>
+					<div>
+						<h2 className='text-3xl font-semibold md:text-4xl'>All buildings</h2>
+						<p>Found {location.length} locations</p>
+					</div>
 					{amenities && (
-						<div>
-							<p>Filters</p>
-							<div className='grid grid-cols-2 gap-1'>
+						<div className='overflow-hidden'>
+							<p className='text-lg font-medium'>Filter results</p>
+							<div className='no-scrollbar flex flex-nowrap gap-1 overflow-scroll pt-2'>
+								{/* TODO: TURN THIS TO A DROPDOWN WITH SORT BY NEXT TO IT */}
 								{amenities.map(item => (
 									<AmenityFilter data={item} trigger={toggleFilter} isActive={activeFilters.includes(item._id) ? 'true' : 'false'} key={item._key} />
 								))}
