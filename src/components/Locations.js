@@ -11,7 +11,7 @@ function Locations({ title, slugExclude, scroll }) {
 			.fetch(`*[_type == "location" && !(slug.current == "${slugExclude}")]{_id, slug, title, location, gallery}`)
 			.then(data => setLocation(data))
 			.catch(err => console.error(err));
-	}, [slug]);
+	}, [slug, slugExclude]);
 
 	return (
 		<div className='py-7 md:py-14 lg:py-28'>
