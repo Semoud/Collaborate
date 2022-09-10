@@ -15,6 +15,9 @@
 	.base-skeleton {
 		@apply animate-pulse rounded-sm bg-slate-400;
 	}
+	.base-skeleton-light {
+		@apply rounded-sm bg-slate-200;
+	}
 }
 @layer utilities {
 	/* Chrome, Safari and Opera */
