@@ -73,7 +73,7 @@ function LocationCollection() {
 								))}
 							</div>
 						) : (
-							<FilterNotFound />
+							<FilterNotFound resetFiltersCallback={resetFilters} />
 						)}
 					</>
 				) : (
