@@ -25,7 +25,7 @@ const Hero = () => {
 						</div>
 						<p className='text-xs'>
 							By clicking Sign Up you're confirming that you agree with our{' '}
-							<a className='underline' href='http://www.semoud.com'>
+							<a className='underline' href='https://www.semoud.com'>
 								Terms and Conditions
 							</a>
 							.

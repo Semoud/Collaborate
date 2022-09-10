@@ -34,26 +34,26 @@ const Navbar = () => {
 						<Link to={'/locations'} onClick={closeMenu} className='nav-link'>
 							Locations
 						</Link>
-						<a className='nav-link' href='http://www.semoud.com/portfolio'>
+						<a className='nav-link' href='https://www.semoud.com/portfolio'>
 							Solutions
 						</a>
-						<a className='nav-link' href='http://www.semoud.com/portfolio'>
+						<a className='nav-link' href='https://www.semoud.com/portfolio'>
 							Enterprise
 						</a>
-						<a className='nav-link' href='http://www.semoud.com/portfolio'>
+						<a className='nav-link' href='https://www.semoud.com/portfolio'>
 							Ideas
 						</a>
-						<a className='mr-0 mb-4 border border-black py-2 px-5 lg:mr-4 lg:mb-0' href='http://www.semoud.com/portfolio'>
+						<a className='mr-0 mb-4 border border-black py-2 px-5 lg:mr-4 lg:mb-0' href='https://www.semoud.com/portfolio'>
 							Login
 						</a>
-						<a className='border border-blue-700 bg-blue-700 py-2 px-5 text-white' href='http://www.semoud.com/portfolio'>
+						<a className='border border-blue-700 bg-blue-700 py-2 px-5 text-white' href='https://www.semoud.com/portfolio'>
 							Contact Us
 						</a>
 					</div>
-					{/* <a className='mr-4 hidden border border-black py-2 px-5 sm:block' href='http://www.semoud.com/portfolio'>
+					{/* <a className='mr-4 hidden border border-black py-2 px-5 sm:block' href='https://www.semoud.com/portfolio'>
 						Login
 					</a>
-					<a className='hidden border border-blue-700 bg-blue-700 py-2 px-5 text-white sm:block' href='http://www.semoud.com/portfolio'>
+					<a className='hidden border border-blue-700 bg-blue-700 py-2 px-5 text-white sm:block' href='https://www.semoud.com/portfolio'>
 						Contact Us
 					</a> */}
 				</div>
