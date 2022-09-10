@@ -4,6 +4,7 @@ import sanityClient from '../client';
 import imageUrlBuilder from '@sanity/image-url';
 import AmenityCard from '../components/AmenityCard';
 import Locations from '../components/Locations';
+import LocationSingleSkeleton from '../components/skeletons/LocationSingleSkeleton';
 
 function LocationSingle() {
 	const { slug } = useParams();
@@ -18,7 +19,6 @@ function LocationSingle() {
 			.fetch(`*[_type == "location" && slug.current == "${slug}"]{_id, title, location, info, amenities[]->{title, icon}, gallery}`)
 			.then(data => setLocationData(data[0]))
 			.catch(err => console.error(err));
-		console.log(slug);
 	}, [slug]);
 
 	useEffect(() => {
@@ -29,7 +29,7 @@ function LocationSingle() {
 		<>
 			<div className='py-7 md:py-14 lg:py-28'>
 				<div className='main-container grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-10'>
-					{locationData && (
+					{locationData ? (
 						<>
 							<div key={locationData._id} className='no-scrollbar flex snap-x snap-mandatory snap-always flex-row gap-4 overflow-scroll sm:grid sm:grid-cols-1 sm:overflow-auto'>
 								{locationData.gallery &&
@@ -66,6 +66,8 @@ function LocationSingle() {
 								</div>
 							</div>
 						</>
+					) : (
+						<LocationSingleSkeleton />
 					)}
 				</div>
 			</div>
