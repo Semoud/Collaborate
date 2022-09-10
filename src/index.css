@@ -12,6 +12,9 @@
 	.input-field {
 		@apply w-full border border-black p-3;
 	}
+	.base-skeleton {
+		@apply animate-pulse rounded-sm bg-slate-400;
+	}
 }
 @layer utilities {
 	/* Chrome, Safari and Opera */
