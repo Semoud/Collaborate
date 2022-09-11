@@ -16,8 +16,8 @@ Mailer.setApiKey(process.env.SG_API_KEY);
 const PORT = process.env.PORT || 7000;
 app.listen(PORT);
 
-// 📮 Form Submittion Path
-app.post('/submittion', (req, res) => {
+// 📮 Form Submission Path
+app.post('/submission', (req, res) => {
 	const data = req.body;
 	const message = {
 		to: process.env.SG_MAILER_TO,
@@ -28,6 +28,6 @@ app.post('/submittion', (req, res) => {
 	};
 
 	Mailer.send(message)
-		.then(() => res.json({ message: 'Message sent! 🛩' }))
+		.then(() => res.json({ message: 'A sales representative from our team will be in touch soon.' }))
 		.catch(err => res.json({ message: err.message }));
 });
