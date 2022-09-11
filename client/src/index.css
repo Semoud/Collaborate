@@ -12,6 +12,9 @@
 	.input-field {
 		@apply w-full border border-black p-3;
 	}
+	.input-field-disabled {
+		@apply w-full border border-slate-400 bg-slate-100 p-3 text-slate-500;
+	}
 	.base-skeleton {
 		@apply animate-pulse rounded-sm bg-slate-400;
 	}
