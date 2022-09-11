@@ -29,8 +29,6 @@ function LocationCollection() {
 			.fetch(`*[_type == "location"${activeFilters.length >= 1 ? ' && amenities[]._ref match [' + list + ']' : ''}]{_id, slug, title, location, gallery}`)
 			.then(data => setLocation(data))
 			.catch(err => console.error(err));
-
-		console.log(activeFilters);
 	}, [activeFilters]);
 
 	const resetFilters = () => {
