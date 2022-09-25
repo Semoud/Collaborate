@@ -15,7 +15,7 @@ const Hero = () => {
 
 	const submitForm = event => {
 		event.preventDefault();
-		const url = '/submission';
+		const url = '/api/submission';
 		const form = { name, email, telephone, country, company, teamSize };
 		const options = {
 			method: 'POST',
