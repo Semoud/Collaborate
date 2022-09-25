@@ -5,10 +5,9 @@ Mailer.setApiKey(process.env.SG_API_KEY);
 const handler = async event => {
 	try {
 		const subject = event.queryStringParameters.name || 'World';
-		console.log(event);
 		return {
 			statusCode: 200,
-			body: JSON.stringify({ message: `Hello ${subject}` }),
+			body: JSON.stringify({ message: `Hello ${subject}`, event }),
 			// // more keys you can return:
 			// headers: { "headerName": "headerValue", ... },
 			// isBase64Encoded: true,

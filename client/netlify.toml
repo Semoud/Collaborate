@@ -1,5 +1,9 @@
 [build]
     functions = "functions"
+
+[dev]
+	publish = "src/"
+
 [[redriects]]
     from = "/api/*"
     to = "/.netlify/functions/:splat"
