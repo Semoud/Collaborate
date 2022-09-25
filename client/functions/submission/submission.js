@@ -20,7 +20,7 @@ const handler = async event => {
 			body: JSON.stringify({
 				message: 'A sales representative from our team will be in touch soon.',
 				event,
-				jsonBody,
+				jsonBody: body,
 				data: message,
 			}),
 			// // more keys you can return:
