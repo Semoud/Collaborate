@@ -3,14 +3,14 @@ Mailer.setApiKey(process.env.SG_API_KEY);
 
 // Docs on event and context https://docs.netlify.com/functions/build/#code-your-function-2
 const handler = async event => {
-	const body = JSON.parse(event.body);
+	const { name, email, telephone, country, company, teamSize } = JSON.parse(event.body);
 
 	const message = {
 		to: process.env.SG_MAILER_TO,
 		from: process.env.SG_MAILER_FROM,
 		subject: 'You have received a new lead!',
 		text: 'this is where the text is',
-		html: `<p><strong>You got a new lead!</strong></p><br/><p><strong>Full name:</strong> ${body.name}</p><p><strong>E-mail address:</strong> ${body.email}</p><p><strong>Telephone number:</strong> ${body.telephone}</p><p><strong>Country:</strong> ${body.country}</p><p><strong>Comapny name:</strong> ${body.company}</p><p><strong>Team size:</strong> ${body.teamSize}</p>`,
+		html: `<p><strong>You got a new lead!</strong></p><br/><p><strong>Full name:</strong> ${name}</p><p><strong>E-mail address:</strong> ${email}</p><p><strong>Telephone number:</strong> ${telephone}</p><p><strong>Country:</strong> ${country}</p><p><strong>Comapny name:</strong> ${company}</p><p><strong>Team size:</strong> ${teamSize}</p>`,
 	};
 
 	try {
@@ -20,7 +20,7 @@ const handler = async event => {
 			body: JSON.stringify({
 				message: 'A sales representative from our team will be in touch soon.',
 				event,
-				jsonBody: body,
+				jsonBody: { name, email, telephone, country, company, teamSize },
 				data: message,
 			}),
 			// // more keys you can return:
